@@ -13,8 +13,9 @@ Server --> [GET] https://jsonplaceholder.typicode.com/posts
 
 ## Frameworks
 
-I’m using frameworks such ``` [Alamofire](https://github.com/Alamofire/Alamofire) ```  
+I’m using frameworks such  ``` Alamofire ```
 
+Alamofire Repo -->  [Alamofire](https://github.com/Alamofire/Alamofire)
 
 
 ## Pods Instructions
