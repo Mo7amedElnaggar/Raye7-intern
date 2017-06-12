@@ -7,5 +7,6 @@ target 'Raye7 intern' do
 
   # Pods for Raye7 intern
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 
 end
