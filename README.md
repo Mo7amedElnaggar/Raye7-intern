@@ -13,9 +13,10 @@ Server --> [GET] https://jsonplaceholder.typicode.com/posts
 
 ## Frameworks
 
-I’m using frameworks such  ``` Alamofire ```
+I’m using frameworks such  ``` Alamofire ``` ``` SwiftyJSON ```
 
 Alamofire Repo -->  [Alamofire](https://github.com/Alamofire/Alamofire)
+SwiftyJSON Repo --> [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON)
 
 
 ## Pods Instructions
