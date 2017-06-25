@@ -27,8 +27,7 @@ class TableVC: UIViewController {
         
         /* -------- Table Configration -------- */
         
-        // Make cell spacing from all Directions is ZERO
-        tableView.separatorInset = .init(top: 0, left: 10, bottom: 0, right: 10)
+        tableView.separatorStyle = .none
         tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
@@ -37,6 +36,10 @@ class TableVC: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     // function load 10 by 10 Posts because Time of Recieving 100 posts might be LARGE

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,50 +23,64 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-vv-Mek">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.042864762246608734" green="0.277721107006073" blue="0.28391861915588379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomCell" rowHeight="150" id="rU6-Yj-mzi" customClass="CustomCell" customModule="Raye7_intern" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rU6-Yj-mzi" id="Wrr-jO-bdv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naggar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQY-Lf-5p4">
-                                                    <rect key="frame" x="13" y="8" width="349" height="30"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-lb-5G5">
+                                                    <rect key="frame" x="8" y="8" width="359" height="133.5"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Raye7 iOS intern" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-fB-IaR">
+                                                            <rect key="frame" x="5" y="40" width="349" height="93.5"/>
+                                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naggar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQY-Lf-5p4">
+                                                            <rect key="frame" x="5" y="0.0" width="349" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="RNb-Mt-wc8"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                            <color key="textColor" red="0.58666780203502933" green="1" blue="0.57298424732539166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="hHB-QT-rvw"/>
+                                                        <constraint firstItem="LaR-fB-IaR" firstAttribute="leading" secondItem="dtM-lb-5G5" secondAttribute="leading" constant="5" id="5vk-Di-udU"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xQY-Lf-5p4" secondAttribute="trailing" constant="5" id="8Js-QR-Xex"/>
+                                                        <constraint firstItem="LaR-fB-IaR" firstAttribute="top" secondItem="xQY-Lf-5p4" secondAttribute="bottom" constant="10" id="ACY-gj-W8U"/>
+                                                        <constraint firstItem="xQY-Lf-5p4" firstAttribute="top" secondItem="dtM-lb-5G5" secondAttribute="top" id="FoB-wT-Hov"/>
+                                                        <constraint firstItem="xQY-Lf-5p4" firstAttribute="leading" secondItem="dtM-lb-5G5" secondAttribute="leading" constant="5" id="jOx-3E-GPj"/>
+                                                        <constraint firstAttribute="trailing" secondItem="LaR-fB-IaR" secondAttribute="trailing" constant="5" id="n97-Bl-w2S"/>
+                                                        <constraint firstAttribute="bottom" secondItem="LaR-fB-IaR" secondAttribute="bottom" id="soG-Va-urj"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Raye7 iOS intern" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-fB-IaR">
-                                                    <rect key="frame" x="13" y="38" width="349" height="103.5"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                </textView>
+                                                </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xQY-Lf-5p4" firstAttribute="top" secondItem="Wrr-jO-bdv" secondAttribute="topMargin" id="3X7-UY-5Jh"/>
-                                                <constraint firstItem="LaR-fB-IaR" firstAttribute="top" secondItem="xQY-Lf-5p4" secondAttribute="bottom" id="GQh-j5-7SE"/>
-                                                <constraint firstItem="LaR-fB-IaR" firstAttribute="leading" secondItem="Wrr-jO-bdv" secondAttribute="leadingMargin" constant="5" id="Gs7-RH-igv"/>
-                                                <constraint firstItem="xQY-Lf-5p4" firstAttribute="leading" secondItem="Wrr-jO-bdv" secondAttribute="leadingMargin" constant="5" id="cJE-Ff-SA5"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="LaR-fB-IaR" secondAttribute="trailing" constant="5" id="qJG-3p-Vwg"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="xQY-Lf-5p4" secondAttribute="trailing" constant="5" id="rBu-yJ-VGx"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="LaR-fB-IaR" secondAttribute="bottom" id="xhv-pf-FQj"/>
+                                                <constraint firstItem="dtM-lb-5G5" firstAttribute="leading" secondItem="Wrr-jO-bdv" secondAttribute="leading" constant="8" id="I4X-Wf-eO5"/>
+                                                <constraint firstAttribute="trailing" secondItem="dtM-lb-5G5" secondAttribute="trailing" constant="8" id="W7w-si-5zV"/>
+                                                <constraint firstItem="dtM-lb-5G5" firstAttribute="top" secondItem="Wrr-jO-bdv" secondAttribute="top" constant="8" id="aYi-jO-b79"/>
+                                                <constraint firstAttribute="bottom" secondItem="dtM-lb-5G5" secondAttribute="bottom" constant="8" id="ug4-u0-edY"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.042864762246608734" green="0.277721107006073" blue="0.28391861915588379" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="cellText" destination="LaR-fB-IaR" id="cUn-qb-Czr"/>
                                             <outlet property="cellTitle" destination="xQY-Lf-5p4" id="L3L-rw-wG1"/>
+                                            <outlet property="cellView" destination="dtM-lb-5G5" id="GVJ-p4-XgL"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.276490412315259" blue="0.28176554568527923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ehk-vv-Mek" secondAttribute="trailing" id="EeV-2W-OjW"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ehk-vv-Mek" secondAttribute="bottom" id="GI0-14-94c"/>

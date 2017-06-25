@@ -29,6 +29,8 @@ $ gem install cocoapods
 Alamofire Integration 
 ```
   pod 'Alamofire'
+  pod 'SwiftyJSON'
+  
 ```
 ```
 $ pod install
