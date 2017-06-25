@@ -36,3 +36,7 @@ Alamofire Integration
 $ pod install
 
 ```
+
+## Frames
+![](ScreenShot/iPhone6.png)
+![](ScreenShot/AM_imac2015_front.png)
