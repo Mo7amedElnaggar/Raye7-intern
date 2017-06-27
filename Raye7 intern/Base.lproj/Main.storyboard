@@ -29,23 +29,20 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rU6-Yj-mzi" id="Wrr-jO-bdv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtM-lb-5G5">
                                                     <rect key="frame" x="8" y="8" width="359" height="133.5"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Raye7 iOS intern" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LaR-fB-IaR">
-                                                            <rect key="frame" x="5" y="40" width="349" height="93.5"/>
+                                                            <rect key="frame" x="5" y="38.5" width="349" height="95"/>
                                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naggar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQY-Lf-5p4">
-                                                            <rect key="frame" x="5" y="0.0" width="349" height="30"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="height" constant="30" id="RNb-Mt-wc8"/>
-                                                            </constraints>
+                                                            <rect key="frame" x="5" y="0.0" width="349" height="28.5"/>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
                                                             <color key="textColor" red="0.58666780203502933" green="1" blue="0.57298424732539166" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>

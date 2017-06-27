@@ -26,7 +26,8 @@ class CustomCell: UITableViewCell {
         
         self.selectionStyle = .none
         
-        cellText.isEditable = false // You can not change its Content
+        cellText.isScrollEnabled = false 
+        cellText.isUserInteractionEnabled = false
         
         cellView.layer.cornerRadius = 15
         
@@ -38,6 +39,16 @@ class CustomCell: UITableViewCell {
         // set cellTitle and cellText
         cellTitle.text = data.0
         cellText.text = data.1
+        
+        
+        cellTitle.numberOfLines = 10 // Fixed 3mro m hywsal l raqam da xD
+        cellTitle.sizeToFit()
+        
+        cellText.sizeToFit()
+        
+        cellView.sizeToFit()
+        
+        self.sizeToFit()
     }
     
     private func makeShadow() {
